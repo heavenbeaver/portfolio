@@ -288,20 +288,6 @@ body {
     background-position: center;
 }
 
-.description__link::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 2px;
-    background-color: #fff;
-    width: 0;
-    bottom: 0;
-    transition: .3s ease all;
-}
-.description__link:hover::after {
-    width: 100%;
-}
-
 .project__number {
     font-size: 48px;
     font-weight: 700;
