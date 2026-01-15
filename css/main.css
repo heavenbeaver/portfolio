@@ -283,7 +283,7 @@ body {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('/res/img/work/link-ico.svg');
+    background-image: url('./res/img/work/link-ico.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -458,7 +458,7 @@ body {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('/res/img/up-arrow.png');
+    background-image: url('./res/img/up-arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
