@@ -190,6 +190,15 @@ body {
     color: var(--zinc-800);
 }
 
+.banner__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.banner__image {
+    width: 50%;
+}
+
 /* ================================ SECTION ABOUT ================================ */
 
 
@@ -231,7 +240,6 @@ body {
     color: var(--zinc-500);
     max-height: fit-content;
 }
-
 
 /* ================================ SECTION PROJECTS ================================ */
 

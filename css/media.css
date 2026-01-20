@@ -101,6 +101,7 @@
     .project__description {
         width: 100%;
     }
+
     .project__text {
         width: 100%;
     }
@@ -115,5 +116,15 @@
     .swiper-slide {
         overflow: hidden;
         min-height: 300px;
+    }
+
+    .banner__image {
+        display: none;
+    }
+}
+
+@media (width > 740px ) {
+    .banner__wrapper {
+        height: calc(100vh - 80px)
     }
 }
