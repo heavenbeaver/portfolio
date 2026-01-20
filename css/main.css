@@ -1,13 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-/* @import url(https://fonts.googleapis.com/css?family=Press+Start+2P:regular);
-@import url(https://fonts.googleapis.com/css?family=VT323:regular);
-@import url(https://fonts.googleapis.com/css?family=Ruslan+Display:regular); */
-
 
 :root {
-    /* FONT */
     --font-family: 'Montserrat', regular;
-    /* COLORS */
     --primary-black-color: #000;
     --primary-neutral-color: #404040;
     --primary-white-color: #fff;
@@ -83,11 +77,13 @@ body {
     padding: 14px 0;
 }
 
-.nav__logo a {
+.nav__logo {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--primary-black-color);
+    cursor: pointer;
+    user-select: none;
 }
 
 .nav__list {
@@ -115,6 +111,10 @@ body {
 }
 
 .nav__item:hover::after {
+    width: 100%;
+}
+
+.nav__item.active::after {
     width: 100%;
 }
 
@@ -156,6 +156,7 @@ body {
 }
 
 .skills__cards {
+    margin-top: 25px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;

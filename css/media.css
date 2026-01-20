@@ -88,6 +88,10 @@
         flex-direction: column;
     }
 
+    .about__image img {
+        width: 100%;
+    }
+
     .project-card {
         flex-direction: column;
         height: auto;
