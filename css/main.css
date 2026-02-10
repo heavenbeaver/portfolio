@@ -199,6 +199,29 @@ body {
     width: 50%;
 }
 
+.arrow-down {
+    aspect-ratio: 1;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: rotate(180deg);
+    opacity: 1;
+    animation: bounce 2s ease-in-out infinite;
+    cursor: pointer;
+    background-image: url('../res/img/up-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes bounce {
+    50% {
+        opacity: .3;
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
 /* ================================ SECTION ABOUT ================================ */
 
 
