@@ -121,6 +121,10 @@
     .banner__image {
         display: none;
     }
+
+    .arrow-down {
+        display: none;
+    }
 }
 
 @media (width > 740px ) {

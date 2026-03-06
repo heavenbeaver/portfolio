@@ -274,6 +274,7 @@ body {
 .projects {
     background-color: #000;
     color: #fff;
+    height: auto;
 }
 
 .project__img {
@@ -294,6 +295,7 @@ body {
     color: var(--primary-white-color);
     width: fit-content;
     text-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .description__link {
@@ -304,8 +306,6 @@ body {
     gap: 10px;
     transition: .3s ease all;
     padding: 10px 0;
-    margin-top: 20px;
-    position: relative;
     width: fit-content;
 }
 
@@ -348,7 +348,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    height: 400px;
+    height: auto;
     position: relative;
 }
 
@@ -372,6 +372,7 @@ body {
     border-radius: 15px;
     width: 900px;
     cursor: grab;
+    height: 400px;
 }
 
 .swiper-slide {
@@ -384,7 +385,7 @@ body {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
-    object-position: left center;
+    object-position: center;
 }
 
 /* ================================ SECTION CONTACT ================================ */
