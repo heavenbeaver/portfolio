@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,26 +18,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="portfolio" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Даниил Бобрицкий | Frontend-разработка</title>
+    <title>Даниил Бобрицкий | Веб-разработчик</title>
 </head>
 
 <body>
-
     <header class="header" id="main">
-        <div class="container">
-            <nav class="nav">
-                <div class="nav__logo">
-                    Даниил Бобрицкий
+
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__wrapper">
+                    <div class="nav__logo">
+                        Даниил Бобрицкий
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item active" data-link="about"><a href="#about">Обо мне</a></li>
+                        <li class="nav__item" data-link="projects"><a href="#projects">Проекты</a></li>
+                        <li class="nav__item" data-link="contacts"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <a href="https://heavenbeaver.github.io/portfolio/res/doc/Бобрицкий Даниил Сергеевич.pdf"
+                        target="_blank" class="resume__btn">Скачать резюме</a>
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__item active" data-link="about"><a href="#about">Обо мне</a></li>
-                    <li class="nav__item" data-link="projects"><a href="#projects">Проекты</a></li>
-                    <li class="nav__item" data-link="contacts"><a href="#contacts">Контакты</a></li>
-                </ul>
-                <a href="https://heavenbeaver.github.io/portfolio/res/doc/Бобрицкий Даниил Сергеевич.pdf"
-                    target="_blank" class="resume__btn">Скачать резюме</a>
-            </nav>
-        </div>
+            </div>
+        </nav>
 
         <div class="header__banner">
             <div class="container">
@@ -48,16 +54,9 @@
                         </div>
 
                         <div class="skills__cards">
+                            <!-- языки -->
                             <div class="card">
-                                <img src="./res/img/skills/atom.png" alt="React" class="skill__card--img">
-                                <p class="skill__card--text">React JS</p>
-                            </div>
-                            <div class="card">
-                                <img src="./res/img/skills/js.svg" alt="JavaScript" class="skill__card--img">
-                                <p class="skill__card--text">JavaScript</p>
-                            </div>
-                            <div class="card">
-                                <img src="./res/img/skills/html-5.png" alt="HTML" class="skill__card--img">
+                                <img src="./res/img/skills/html.svg" alt="HTML" class="skill__card--img">
                                 <p class="skill__card--text">HTML</p>
                             </div>
                             <div class="card">
@@ -65,26 +64,51 @@
                                 <p class="skill__card--text">CSS</p>
                             </div>
                             <div class="card">
-                                <img src="./res/img/skills/php.png" alt="PHP" class="skill__card--img">
+                                <img src="./res/img/skills/js.svg" alt="JavaScript" class="skill__card--img">
+                                <p class="skill__card--text">JavaScript</p>
+                            </div>
+                            <div class="card">
+                                <img src="./res/img/skills/typescript.svg" alt="TypeScript" class="skill__card--img">
+                                <p class="skill__card--text">TypeScript</p>
+                            </div>
+                            <div class="card">
+                                <img src="./res/img/skills/php-mono.svg" alt="PHP" class="skill__card--img">
                                 <p class="skill__card--text">PHP</p>
+                            </div>
+
+                            <!-- фреймворки -->
+                            <div class="card">
+                                <img src="./res/img/skills/react.svg" alt="React" class="skill__card--img">
+                                <p class="skill__card--text">React</p>
+                            </div>
+                            <div class="card">
+                                <img src="./res/img/skills/nodedotjs.svg" alt="Node JS" class="skill__card--img">
+                                <p class="skill__card--text">Node JS</p>
+                            </div>
+                            <div class="card">
+                                <img src="./res/img/skills/express.svg" alt="Express" class="skill__card--img">
+                                <p class="skill__card--text">Express</p>
                             </div>
                             <div class="card">
                                 <img src="./res/img/skills/wordpress.svg" alt="Wordpress" class="skill__card--img">
                                 <p class="skill__card--text">Wordpress</p>
                             </div>
                             <div class="card">
-                                <img src="./res/img/skills/bitrix.svg" alt="Bitrix" class="skill__card--img">
-                                <p class="skill__card--text">Bitrix</p>
+                                <img src="./res/img/skills/bitrix.svg" alt="1С-Битрикс" class="skill__card--img">
+                                <p class="skill__card--text">1С-Битрикс</p>
                             </div>
-                            <!-- <div class="card">
+                            <div class="card">
                                 <img src="./res/img/skills/laravel-svgrepo-com.svg" alt="Laravel"
                                     class="skill__card--img">
                                 <p class="skill__card--text">Laravel</p>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
 
-                    <img src="./res/img/about/hero.jpg" alt="" class="banner__image" width="400">
+                    <!-- баннер на главной -->
+                    <img src="./res/img/about/banner__hero.svg" alt="Баннер на главной" class="banner__image" width="400">
+
+                    <!-- кнопка скролла вниз -->
                     <a href="#about" class="arrow-down"></a>
                 </div>
             </div>
@@ -99,14 +123,16 @@
                 </div>
                 <div class="about__wrapper">
                     <div class="about__image">
-                        <img src="./res/img/about/me.jpeg" alt="me">
+                        <img src="./res/img/about/about__foto.svg" alt="Иллюстрация обо мне">
                     </div>
                     <div class="about__text">
                         <p>
-                            Веб-разработчик с 1.5 годами коммерческого опыта, специализируюсь на Frontend-разработке. <br>Работал в веб-студии
-                            «Приоритет» (г. Тюмень), где прошёл полный цикл разработки — от вёрстки макетов до деплоя на CMS (Bitrix, WordPress). <br><br>
-                            Активно развиваюсь в React: создаю компонентные интерфейсы, работаю с хуками и state-менеджментом. <br>Целенаправленно ищу
-                            позицию React Frontend-разработчика и готов быстро погружаться в новый стек.
+                            Веб-разработчик с 1.5 годами коммерческого опыта, специализируюсь на Fullstack-разработке
+                            сайтов и веб-приложений. <br>Работал в веб-студии
+                            «Приоритет» (г. Тюмень), где прошёл полный цикл разработки — от вёрстки макетов до деплоя на
+                            CMS (Bitrix, WordPress). <br><br>
+                            Активно развиваюсь в React: создаю компонентные интерфейсы, работаю с хуками и
+                            state-менеджментом.
                         </p>
                     </div>
                 </div>
@@ -114,6 +140,9 @@
         </section>
 
         <section class="section projects" id="projects">
+
+
+
             <div class="container">
                 <div class="section__title white__title">
                     <h2>Мои <span class="bold">Проекты</span></h2>
@@ -258,7 +287,11 @@
                     <h2>Контакты</h2>
                     <div class="social__items">
                         <div class="social--item">
-                            <a href="https://t.me/danbbr" target="_blank"><img src="./res/img/contacts/telegram-2.png"
+                            <a href="https://vk.com/danbbr" target="_blank"><img src="./res/img/contacts/vk-mono.svg"
+                                    alt="telegram">ВКонтакте</a>
+                        </div>
+                        <div class="social--item">
+                            <a href="https://t.me/danbbr" target="_blank"><img src="./res/img/contacts/telegram.png"
                                     alt="telegram">Telegram</a>
                         </div>
                         <div class="social--item">
@@ -267,7 +300,7 @@
                         </div>
                         <div class="social--item">
                             <a href="mailto:daniilbobritskiy@yandex.ru" target="_blank"><img
-                                    src="./res/img/contacts/email-2.png" alt="email">Email</a>
+                                    src="./res/img/contacts/email.png" alt="email">Написать на почту</a>
                         </div>
                     </div>
                 </div>
@@ -279,23 +312,7 @@
         © Даниил Бобрицкий | 2026
     </footer>
 
-    <div class="dinamic-menu">
-        <div class="container">
-            <nav class="nav-hidden">
-                <div class="nav__logo">
-                    Даниил Бобрицкий
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item active" data-link="about"><a href="#about">Обо мне</a></li>
-                    <li class="nav__item" data-link="projects"><a href="#projects">Проекты</a></li>
-                    <li class="nav__item" data-link="contacts"><a href="#contacts">Контакты</a></li>
-                </ul>
-                <a href="https://heavenbeaver.github.io/portfolio/res/doc/Бобрицкий Даниил Сергеевич.pdf"
-                    target="_blank" class="resume__btn">Скачать резюме</a>
-            </nav>
-        </div>
-    </div>
-
+    <!-- кнопка вернутся наверх -->
     <div class="btn-up" id="btn-up"></div>
 
     <script src="./lib/swiper/swiper-bundle.min.js"></script>

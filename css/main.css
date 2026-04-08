@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
 :root {
-    --font-family: 'Montserrat', regular;
+    --font-family: 'Montserrat', sans-serif;
     --primary-black-color: #000;
     --primary-neutral-color: #404040;
     --primary-white-color: #fff;
@@ -22,14 +20,14 @@
 }
 
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: var(--font-family);
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     height: 100dvh;
     overflow-x: hidden;
 }
@@ -37,7 +35,6 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
-
 }
 
 .bold {
@@ -51,23 +48,19 @@ body {
 /* ================================ HEADER ================================ */
 
 .nav {
+    position: fixed;
+    left: 0;
+    background-color: var(--primary-white-color);
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 0 1px 0 var(--zinc-500);
+}
+
+.nav__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 14px 0;
-}
-
-.dinamic-menu {
-    display: none;
-    width: 100%;
-    position: fixed;
-    top: -100px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 3px 0 rgb(220, 220, 220);
-    transition: 0.3s ease all;
-    z-index: 99;
-    opacity: 0;
 }
 
 .nav-hidden {
@@ -121,7 +114,7 @@ body {
 .resume__btn {
     background-color: var(--primary-black-color);
     color: var(--primary-white-color);
-    padding: 1rem 1rem;
+    padding: 12px 10px;
     border-radius: 10px;
     width: fit-content;
     text-wrap: nowrap;
@@ -130,6 +123,7 @@ body {
     outline: 2px solid transparent;
     outline-offset: -2px;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .resume__btn:hover {
@@ -169,7 +163,7 @@ body {
     gap: 5px;
     align-items: center;
     user-select: none;
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     padding: 10px 15px;
     box-shadow: 0 0 2px 0 rgb(196, 196, 196);
     border-radius: 5px;
@@ -179,10 +173,11 @@ body {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 1px 8px 0px rgb(215, 215, 215);
+    background-color: var(--zinc-100);
 }
 
 .card img {
-    width: 36px;
+    width: 24px;
 }
 
 .card p {
@@ -193,21 +188,30 @@ body {
 .banner__wrapper {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.banner__left {
+    max-width: 700px;
+    z-index: 4;
 }
 
 .banner__image {
-    width: 50%;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    width: 650px;
 }
 
 .arrow-down {
     aspect-ratio: 1;
     width: 40px;
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     left: 50%;
     transform: rotate(180deg);
     opacity: 1;
-    animation: bounce 2s ease-in-out infinite;
+    animation: bounce 3s ease-in-out infinite;
     cursor: pointer;
     background-image: url('../res/img/up-arrow.png');
     background-position: center;
@@ -247,7 +251,7 @@ body {
 }
 
 .about__image {
-    width: 300px;
+    height: 400px;
     aspect-ratio: 1;
     border-radius: 10px;
     overflow: hidden;
@@ -277,6 +281,7 @@ body {
     background-color: #000;
     color: #fff;
     height: auto;
+    position: relative;
 }
 
 .project__img {
@@ -410,7 +415,8 @@ body {
 .social__items {
     margin-top: 2rem;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .social--item {
@@ -427,8 +433,8 @@ body {
 }
 
 .social--item img {
-    width: 2rem;
-    height: 2rem;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -454,15 +460,16 @@ body {
     background-color: var(--zinc-300);
     opacity: 0;
     position: fixed;
-    bottom: -100px;
+    bottom: 40px;
     cursor: pointer;
     border-radius: 50%;
     width: 60px;
+    height: 60px;
     aspect-ratio: 1;
     right: 5%;
     padding: 10px 10px;
     transition: .5s ease box-shadow;
-    z-index: 998;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
